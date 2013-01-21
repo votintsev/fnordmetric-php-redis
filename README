@@ -1,5 +1,7 @@
 # [Fnordmetric](https://github.com/paulasmuth/fnordmetric) PHP API REDIS
 
+v0.1 final
+
 ### Send new events to Fnordmetric directly into Redis
 
 Fnordmetric PHP API REDIS uses phpredis lib to connect Redis server and put event directly into Redis.
