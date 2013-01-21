@@ -1,8 +1,12 @@
 <?php
 require_once 'FnordmetricApiRedis.php';
 
-# Instantiate the class, create new connect to redis server on 127.0.0.1:6379
-$fnord = new FnordmetricApiRedis('127.0.0.1:6379');
+# External connection to Redis server (use phpredis lib)
+$redis = new Redis();
+$redis->connect('127.0.0.1:6379');
+
+# Instantiate the class, set connect to redis server
+$fnord = new FnordmetricApiRedis($redis);
 
 # Send a simple event
 $fnord->event('new_registration');
@@ -15,4 +19,5 @@ $fnord->event('new_registration', $data);
 $sessiontoken = 'rtERydysuTY';
 $fnord->event('_set_name', array("name" => "Goodman"), $sessiontoken);
 $fnord->event('new_registration', array('referer' => 'twitter'), $sessiontoken);
+
 ?>
