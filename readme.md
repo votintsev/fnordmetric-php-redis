@@ -2,8 +2,8 @@
 
 ### Send new events to Fnordmetric directly into Redis
 
-Fnordmetric PHP API REDIS uses [phpredis](https://github.com/nicolasff/phpredis.git) lib to connect Redis server and put event directly into Redis.
-Library [Fnordmetric PHP API](https://github.com/leemachin/fnordmetric-php-api.git) uses TCP sockets to write new events to Fnordmetric - nice solution,
+Fnordmetric PHP API REDIS uses [phpredis](https://github.com/nicolasff/phpredis) lib to connect Redis server and put event directly into Redis.
+Library [Fnordmetric PHP API](https://github.com/leemachin/fnordmetric-php-api) uses TCP sockets to write new events to Fnordmetric - nice solution,
 but if you have on your scripts redis or redis connect and you want use it - use this very simple lib.
 
 ## Usage
