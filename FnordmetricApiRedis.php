@@ -35,7 +35,6 @@ class FnordmetricApiRedis
      */
     private function connect($host = '127.0.0.1', $port = 6379, $db = false)
     {
-        var_dump($db);
         $redis = new Redis();
         $redis->connect($host.':'.$port);
         if ($db !== false) {
