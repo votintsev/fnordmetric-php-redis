@@ -1,0 +1,13 @@
+{
+    "name": "fnordmetric PHP Api (redis)",
+    "description": "An API for fnordmetric that pushes events directly to Redis",
+    "type": "library",
+    "keywords" : [
+        "stats", "statistics", "redis", "api", "fnordmetric",
+        "metric", "event"
+    ],
+    "license": "MIT",
+    "autoload": {
+        "classmap": [ "src/" ]
+    }
+}
